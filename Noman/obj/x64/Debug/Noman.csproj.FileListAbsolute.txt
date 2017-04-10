@@ -1,0 +1,9 @@
+E:\startCounterProjects\TestAdfenix\TestAdfenix\bin\Debug\Noman.exe
+E:\startCounterProjects\TestAdfenix\TestAdfenix\bin\Debug\Noman.pdb
+E:\startCounterProjects\TestAdfenix\TestAdfenix\obj\x64\Debug\Noman.exe
+E:\startCounterProjects\TestAdfenix\TestAdfenix\obj\x64\Debug\Noman.pdb
+E:\startCounterProjects\TestAdfenix\Noman\bin\Debug\Noman.exe
+E:\startCounterProjects\TestAdfenix\Noman\bin\Debug\Noman.pdb
+E:\startCounterProjects\TestAdfenix\Noman\obj\x64\Debug\Noman.csprojResolveAssemblyReference.cache
+E:\startCounterProjects\TestAdfenix\Noman\obj\x64\Debug\Noman.exe
+E:\startCounterProjects\TestAdfenix\Noman\obj\x64\Debug\Noman.pdb

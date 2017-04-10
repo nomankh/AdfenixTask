@@ -1,0 +1,5 @@
+E:\startCounterProjects\TestAdfenix\TestAdfenix\bin\Debug\TestAdfenix.exe
+E:\startCounterProjects\TestAdfenix\TestAdfenix\bin\Debug\TestAdfenix.pdb
+E:\startCounterProjects\TestAdfenix\TestAdfenix\obj\x64\Debug\TestAdfenix.csprojResolveAssemblyReference.cache
+E:\startCounterProjects\TestAdfenix\TestAdfenix\obj\x64\Debug\TestAdfenix.exe
+E:\startCounterProjects\TestAdfenix\TestAdfenix\obj\x64\Debug\TestAdfenix.pdb

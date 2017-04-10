@@ -1,0 +1,78 @@
+﻿<link rel="import" href="/sys/polymer/polymer.html">
+<link rel="import"  href="/sys/google-chart/google-chart.html" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="/Styles/Style.css">
+
+
+<template>
+    <template is="dom-bind">
+
+        <div class="main-Company">
+            <fieldset class="boundries">
+                <label>Main Franchise Company :</label>
+                <input value="{{model.Name$::input}}" />
+
+            </fieldset>
+            <button class="btn" value="{{model.SaveFranchiseAgencyInfo$::click}}" onmousedown="++this.value">Save Franchise Agency</button>
+            <button class="btn btn-primary" value="{{model.CreateNewFranchiseeCompany$::click}}" onmousedown="++this.value">Add new Franshisee Company</button>
+        </div>
+
+        
+            <div class="franchisee-Stats col-md-12" id="chart_div">
+                <h2>Franchisee Stats</h2>
+
+                <div class="col-md-4">
+                    <google-chart type='column'
+                                  options='{"title": "On Average Commision"}'
+                                  cols='[{"label":"Company", "type":"string"}, {"label":"Commision", "type":"number"}]'
+                                  rows={{model.AverageCommisionValues}}>
+                    </google-chart>
+                </div>
+                <div class="col-md-4">
+                    <google-chart type='column'
+                                  options='{"title": "House Sold"}'
+                                  cols='[{"label":"Company", "type":"string"}, {"label":"Sold", "type":"number"}]'
+                                  rows={{model.HouseSoldValues}}>
+                    </google-chart>
+                </div>
+                <div class="col-md-4">
+                    <google-chart type='column'
+                                  options='{"title": "Total Commision Earned"}'
+                                  cols='[{"label":"Company", "type":"string"}, {"label":"Earned", "type":"number"}]'
+                                  rows={{model.TotalCommisionValues}}>
+                    </google-chart>
+                </div>
+
+                <div>
+                    <div class="col-md-6">
+
+                        <google-chart type='column'
+                                      options='{"title": "Company Trends"}'
+                                      cols='[{"label":"Company", "type":"string"}, {"label":"Earned", "type":"number"}]'
+                                      rows={{model.CompanyTrendValues}}>
+                        </google-chart>
+                    </div>
+                    <div class="col-md-6">
+                        Basically Trend tell us that this particular franchisee is suitable
+                        to work with or not depending on the commision they are getting,
+                        closer to 0 and they are not good to do business with but we should also keep
+                        an eye on rest of the charts, it may be the case that its taking about 90%
+                        but still its giving less business than rest
+                    </div>
+
+                </div>
+            </div>
+        
+
+
+        <template is="dom-repeat" items="{{model.Companies}}">
+            <div class="col-md-12 company">
+                <starcounter-include partial="{{item}}"></starcounter-include>
+            </div>
+            <hr />
+        </template> 
+    </template>
+
+    
+    
+</template>

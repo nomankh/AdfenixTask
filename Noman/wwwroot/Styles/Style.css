@@ -1,0 +1,58 @@
+﻿
+
+    .boundries {
+        margin: auto;
+    }
+
+    .button {
+        margin: auto;
+    }
+
+    .houses {
+        margin-bottom: 20px;
+        margin-top: 20px;
+        overflow-y: scroll;
+        height: 320px;
+        
+    }
+    .input{
+        width:300px;
+        height:35px;
+    }
+
+    
+    .houses{
+        margin-bottom:20px;
+        margin-top:100px;
+    }
+    .company{
+        border:solid 1px black;
+        margin-bottom:5px;
+        
+    }
+    .main-Company{
+        margin:20px;
+    }
+
+    .singleHouse {
+        border: solid 1px black;
+        margin-bottom: 5px;
+    }
+
+    .input {
+        width: 250px;
+        height: 75px;
+    }
+
+    .classLabel {
+        width: 150px;
+        font-size: medium;
+    }
+    .houseMap{
+        height :600px;
+        
+    }
+.input[type="number"] 
+{
+    border:solid 1px black;
+}

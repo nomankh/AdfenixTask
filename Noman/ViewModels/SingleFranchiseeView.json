@@ -1,0 +1,16 @@
+{
+  "Html": "/Noman/SingleFranchiseeView.html",
+  "Name$": "",
+  "Houses": [ { } ],
+  
+    "House_No$": "",
+    "Street$": "",
+    "ZipCode$": "",
+    "City$": "",
+    "State$": "",
+    "Country$": "",
+  "CompleteAddress": "",
+ 
+  "CreateNewHouse$": 0,
+  "SaveCurrentFranchiseeInfo$": 0
+}

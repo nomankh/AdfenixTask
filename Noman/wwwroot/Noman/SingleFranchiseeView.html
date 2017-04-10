@@ -1,0 +1,79 @@
+﻿    
+    <link rel="import" href="/sys/polymer/polymer.html">
+   <link rel="import" href="/sys/google-map/google-map.html" />
+    <link rel="stylesheet" href="/Styles/Style.css">
+
+
+<template>
+    <template is="dom-bind">
+               
+        <div class="col-md-12">
+        <div class="col-md-6 col-sm-12">
+            <h3 class="text-center"><a href="/Noman"><i class="glyphicon glyphicon-circle-arrow-left"></i>Company Details</a></h3>
+            <div class="col-md-12 text-left">
+                <label>{{model.CompleteAddress}}</label><br />
+                <fieldset>
+                    <label class="classLabel">Company Name:</label>
+                    <input value="{{model.Name$::input}}" />
+                </fieldset>
+                <fieldset>
+                    <label class="classLabel">House No:</label>
+                    <input value="{{model.House_No$::input}}" />
+                </fieldset>
+                <fieldset>
+                    <label class="classLabel">Street Name:</label>
+                    <input value="{{model.Street$::input}}" />
+                </fieldset>
+                <fieldset>
+                    <label class="classLabel">Zip Code:</label>
+                    <input value="{{model.ZipCode$::input}}" />
+                </fieldset>
+                <fieldset>
+                    <label class="classLabel">City:</label>
+                    <input value="{{model.City$::input}}" />
+                </fieldset>
+                <fieldset>
+                    <label class="classLabel">State:</label>
+                    <input value="{{model.State$::input}}" />
+                </fieldset>
+                <fieldset>
+                    <label class="classLabel">Country:</label>
+                    <input value="{{model.Country$::input}}" />
+                </fieldset>
+                
+
+            </div>
+            <div class="col-md-12">
+                
+                <button class="btn " value="{{model.SaveCurrentFranchiseeInfo$::click}}" onmousedown="++this.value">Save Franchisee Info</button>
+                <button class="btn btn-primary" value="{{model.CreateNewHouse$::click}}" onmousedown="++this.value">Add new House</button>
+                
+            </div>
+        </div>
+            
+        <div class="col-md-6 houseMap">
+            <h3>Company Houses</h3>
+            <google-map   api-key="AIzaSyCBnnVoM6YYe4iMeddw5zdf-5HGvBWPLzI" fit-to-markers>
+                
+                <template class="" is="dom-repeat" items="{{model.Houses}}">
+                    <google-map-marker latitude="{{item.latitude}}" longitude="{{item.longitude}}"
+                                       draggable="false" title="{{item.CompleteAddress}}"></google-map-marker>
+                    </template>
+</google-map>
+        </div>
+        </div>
+        <div class="col-md-12 houses text-right">
+            <h3 class="text-center">House Details</h3>
+           
+            <template class="" is="dom-repeat" items="{{model.Houses}}">
+                <div class="col-md-12 ">
+
+                    <starcounter-include partial="{{item}}"></starcounter-include>
+                </div>
+                
+            </template>
+        </div>
+    </template>
+
+</template>
+    

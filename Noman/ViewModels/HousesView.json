@@ -1,0 +1,19 @@
+{
+  "Html": "/Noman/HousesView.html",
+    "url": "",
+    "House_No$": "",
+    "Street$": "",
+    "ZipCode$": "",
+    "City$": "",
+    "State$": "",
+    "Country$": "",
+    "TransactionTime$": "",
+    "SalePrice$": 0,
+    "Commision$": 0,
+    "CompleteAddress": "",
+    "Longitude$": "",
+  "Latitude$": "",
+  "latitude": 0,
+  "longitude": 0,
+    "RegisterHouse$": 0
+}

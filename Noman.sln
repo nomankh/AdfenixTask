@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Noman", "Noman\Noman.csproj", "{FCA46500-C420-4F09-A1B9-E779B25D44CD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FCA46500-C420-4F09-A1B9-E779B25D44CD}.Debug|x64.ActiveCfg = Debug|x64
+		{FCA46500-C420-4F09-A1B9-E779B25D44CD}.Debug|x64.Build.0 = Debug|x64
+		{FCA46500-C420-4F09-A1B9-E779B25D44CD}.Release|x64.ActiveCfg = Release|x64
+		{FCA46500-C420-4F09-A1B9-E779B25D44CD}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

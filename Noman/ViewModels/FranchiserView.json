@@ -1,0 +1,13 @@
+{
+  
+    "Html": "/Noman/FranchiserView.html",
+    "Name$": "",
+  "Companies": [ {  } ],
+                               
+    "AverageCommisionValues": [ [] ],
+    "TotalCommisionValues": [ [] ],
+    "CompanyTrendValues": [ [] ],
+    "HouseSoldValues": [[]],
+    "CreateNewFranchiseeCompany$": 0,                       
+    "SaveFranchiseAgencyInfo$": 0
+}

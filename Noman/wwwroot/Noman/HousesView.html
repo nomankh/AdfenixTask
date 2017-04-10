@@ -1,0 +1,69 @@
+﻿
+
+<template>
+    
+    <template is="dom-bind">
+        
+        <div class="singleHouse">
+            
+            <h4>{{model.CompleteAddress}}</h4>
+            
+            <fieldset>
+                <label class="classLabel">House No:</label>
+                <input value="{{model.House_No$::input}}" />
+            </fieldset>
+            <fieldset>
+                <label class="classLabel">Street Name:</label>
+                <input value="{{model.Street$::input}}" />
+            </fieldset>
+            <fieldset>
+                <label class="classLabel">Zip Code:</label>
+                <input value="{{model.ZipCode$::input}}" />
+            </fieldset>
+            <fieldset>
+                <label class="classLabel">City:</label>
+                <input value="{{model.City$::input}}" />
+            </fieldset>
+            <fieldset>
+                <label class="classLabel">State:</label>
+                <input value="{{model.State$::input}}" />
+            </fieldset>
+            <fieldset>
+                <label class="classLabel">Country:</label>
+                <input value="{{model.Country$::input}}" />
+            </fieldset>
+
+
+            <h4>Transaction Info</h4>
+            <fieldset>
+                <label class="classLabel">Transaction Time</label>
+                <input type="date" value="{{model.TransactionTime$::input}}" />
+            </fieldset>
+            <fieldset>
+                <label class="classLabel">Sale Price:</label>
+                <input type="number" value="{{model.SalePrice$::input}}" />
+            </fieldset>
+            <fieldset>
+                <label class="classLabel">Commision:</label>
+                <input type="number" value="{{model.Commision$::input}}" />
+            </fieldset>
+
+            <fieldset>
+                <label class="classLabel">Latitude:</label>
+                <input type="number" step="any"  value="{{model.Latitude$::input}}" />
+            </fieldset>
+            <fieldset>
+                <label class="classLabel">Longitude:</label>
+                <input type="number" step="any" min="-200" value="{{model.Longitude$::input}}" />
+            </fieldset>
+
+            <a class="btn btn-primary" href="{{model.url}}">View Details</a>
+            <button class="btn" style="margin-top: 12px;
+    margin-bottom: 12px;
+    margin-right: 12px;
+" value="{{model.RegisterHouse$::click}}" onmousedown="++this.value">
+                Register House
+            </button>
+        </div>
+    </template>
+</template>
