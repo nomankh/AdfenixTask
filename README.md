@@ -6,4 +6,5 @@ Handler for a specific franchise
 /Noman/franchise/{franchiseID}
 Handler for specific house
 /Noman/house/{house ID}
-
+On the View Details Page of House you can Share it on Facebook 
+by clicking the Share on Facebook Button 
